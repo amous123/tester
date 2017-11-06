@@ -1,0 +1,110 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+<script>
+function debug(x){
+  alert(x);
+}
+</script>
+
+  <script type="text/javascript">
+  function displayDate() {
+    var a = document.getElementById("contact-name-box").value;
+    var b = document.getElementById("contact-link-box").value;
+    var c = document.getElementById("contact-description-box").value;
+    var z = a+"<br>"+b+"<br>"+c;
+          debug("working");
+      document.getElementById("demo").innerHTML = (z);
+        WriteFile(z);
+  }
+</script>
+<script>
+  function Update() {
+      if (Input.GetKeyDown("r")) {
+          WriteFile(filePath);
+      }
+      if (Input.GetKeyDown("f")) {
+          ReadFile(filePath);
+      }
+  }
+</script>
+<script>
+
+  import System.IO;
+  var filePath = "/Users/zakled/Desktop/JokesOnHtml/links.txt";
+
+  function WriteFile(filepathIncludingFileName : String)
+  {
+    alert('its a peice of shit');
+      var sw : StreamWriter = new StreamWriter(filePath);
+      sw.WriteLine("Line to write");
+      sw.WriteLine(z);
+      sw.Flush();
+      sw.Close();
+  }
+  </script>
+<script>
+  function ReadFile(filepathIncludingFileName : String) {
+      sr = new File.OpenText(filepathIncludingFileName);
+
+      input = "";
+      while (true) {
+          input = sr.ReadLine();
+          if (input == null) { break; }
+          Debug.Log("line="+input);
+      }
+      sr.Close();
+  }
+
+  </script>
+
+  <link rel="StyleSheet" href="style.css">
+  <meta charset="utf-8" />
+  <title style="text-align:center;"> MemeHub </title style="text-align:center;">
+  <meta name="Developers" content="amous123">
+
+</head>
+<body>
+  <div id="main">
+    <div id="top">
+      <h1 id="MainTitle"> MemeHub </h1>
+        <p style="text-align:center;"> Welcome to MemeCenter </p style="text-align:center;">
+    </div>
+    <div id="picture_insert">
+
+
+      <div id="contact-content">
+        <div id="contact-form">
+            <div id="name-elements">
+                <p id="contact-name">Name</p>
+                <input id="contact-name-box" placeholder="Name"/>
+            </div>
+            <div id="email-elements">
+                <p id="contact-link">URL Link</p>
+                <input id="contact-link-box" placeholder="Link"/>
+            </div>
+            <div id="message-elements">
+                <p id="contact-description">Description</p>
+                <textarea rows="7" id="contact-description-box" placeholder="Description"></textarea>
+            </div>
+            <div id="bottom-button">
+                <button type="button" value="contact-button" onclick="displayDate()" id="contact-button">SEND</button>
+            </div>
+        </div>
+    </div>
+
+
+    <p id="demo"> </p>
+
+    </div>
+    <div id="picture_display">
+    </div>
+      <a href="product.html"><button>Try us!</button></a>
+  </div>
+<h2 id="ContactInfo">  Contact Info </h2>
+  <p> WeAreAwsome.net </p>
+
+</body>
+
+</html>

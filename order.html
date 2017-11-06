@@ -1,0 +1,60 @@
+<DOCTYPE! html>
+<html>
+  <head>
+    <link rel="StyleSheet" href="style.css">
+    <meta name="author" content="amous123">
+  </head>
+    <body>
+
+      <form id="frm1" action="/action_page.php">
+        First name: <input type="text" name="fname" value="Donald"><br>
+        Last name: <input type="text" name="lname" value="Duck"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <p>Click "Try it" to display the value of each element in the form.</p>
+
+      <button onclick="Start()">Try it</button>
+
+      <p id="demo"></p>
+
+      <script>
+      function myFunction() {
+
+          var x = document.forms["frm1"];
+          var text = "";
+          var i;
+          for (i = 0; i < x.length ;i++) {
+              text += x.elements[i].value + "<br>";
+          }
+          document.getElementById("demo").innerHTML = text;
+          alert("so far so good");
+          Start();
+      }
+      </script>
+      <script>
+      import System.IO;
+
+      function Start () {
+        alert("something");
+          var dirs : DirectoryInfo[] = new DirectoryInfo("/Users/zakled/Desktop/JokesOnHtml").GetDirectories();
+          var sw : StreamWriter = new System.IO.StreamWriter("links.txt");
+          sw.WriteLine("Found the following folder:");
+          for (var dir : DirectoryInfo in dirs){
+              sw.WriteLine(dir.Name);
+          }
+          sw.Close();
+
+          var sr : StreamReader = new System.IO.StreamReader("DriveDirs.txt");
+
+          Debug.Log(sr.CurrentEncoding);
+          var line : String;
+
+          while (!sr.EndOfStream) {
+              line = sr.ReadLine();
+              Debug.Log(line);
+          }
+      }
+      </script>
+    </body>
+</html>
