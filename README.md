@@ -1,2 +1,2 @@
 # Website
-This repository contains items for testing purposes and improving skills in html.
+This repository contains a testing website for practice.

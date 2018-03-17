@@ -1,11 +1,8 @@
-body {
-background-image: url("http://img21.laughinggif.com/pic/HTTPS9tZWRpYS50ZW5vci5jby9pbWFnZXMvOWI5MDdjNzMzM2VkN2ZkYmRhZGYyMDc0YzQ2N2FmM2IvdGVub3IuZ2lm.gif");
-background-image: cover;
-background-attachment: fixed;
 
-  background-color: red;
-  color: white;
-
+body{
+background-color: #3d3d5e;
+margin: 0;
+font-style: 'Montsserat';
 }
 
 #MainTitle {
@@ -13,6 +10,121 @@ background-attachment: fixed;
   font-family: sans-serif;
 }
 
-p {
-  font-family: sans-serif;
+#top {
+  background-image: url("https://images.unsplash.com/photo-1498538029950-cf44f1cf63f6?auto=format&fit=crop&w=1540&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-image: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+
+#picture_insert{
+
+}
+
+/*CONTACT*/
+#contact {
+    height: auto;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #1b1e33;
+}
+
+#contact-content {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    z-index: 2;
+    margin-top: 0%;
+    overflow: hidden;
+}
+
+#contact-form {
+    width: 50%;
+    z-index: 3;
+    text-align: left;
+    display: block;
+}
+
+#contact-bottom {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    float: center;
+}
+
+#contact-title {
+    font-size: 1.5em;
+    text-align: center;
+    z-index: 1;
+    letter-spacing: 2px;
+    padding-top: 0%;
+}
+
+.contact-stuff {
+    font-size: 1em;
+    z-index: 4;
+    margin-left: 18%;
+}
+
+#contact-info-first {
+    margin-top: 5%;
+}
+
+#contact-name-box, #contact-link-box {
+    background-color: transparent;
+    color: #FFC80A;
+    padding: 0.25em 0.25em;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #FFC80A 2px;
+    width: 85%;
+}
+
+#name-elements, #link-elements {
+    width: 50%;
+    float: left;
+}
+
+#description-elements {
+    margin-top: 10%;
+}
+
+#contact-description-box {
+    background-color: transparent;
+    color: #FFC80A;
+    padding: 0.25em 0.25em;
+    outline: none;
+    outline-style: none;
+    border: solid #FFC80A 2px;
+    width: 92.5%;
+    resize: none;
+}
+
+#contact-name, #contact-link, #contact-description {
+    fontsize: 1em;
+    visibility: hidden;
+}
+
+#bottom-button {
+    width: 92.5%;
+    content-align: center;
+    padding: 0px 45%;
+}
+
+#contact-button {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#picture_display{
+
 }
