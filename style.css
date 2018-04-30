@@ -1,130 +1,169 @@
 
 body{
 background-color: #3d3d5e;
+padding: 0;
 margin: 0;
+width: 100%;
 font-style: 'Montsserat';
 }
 
-#MainTitle {
+#AboutMe {
   text-align: center;
   font-family: sans-serif;
+  border-top: solid #FFC80A 10px;
 }
 
 #top {
-  background-image: url("https://images.unsplash.com/photo-1498538029950-cf44f1cf63f6?auto=format&fit=crop&w=1540&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
-  background-image: cover;
-  background-attachment: fixed;
-  max-width:100%;
-  height: 100%;
   text-align: center;
+  height: 100%;
+  width: 100%;
   font-size: 2.5em;
+  position: absolute;
 }
 
 
-#picture_insert{
-
-}
-
-/*CONTACT*/
-#contact {
-    height: auto;
-    position: relative;
-    justify-content: center;
-    z-index: 1;
-    overflow: hidden;
-    background-color: #1b1e33;
-}
-
-#contact-content {
-    position: relative;
-    justify-content: center;
-    display: flex;
-    z-index: 2;
-    margin-top: 0%;
-    overflow: hidden;
-}
-
-#contact-form {
-    width: 50%;
-    z-index: 3;
-    text-align: left;
-    display: block;
-}
-
-#contact-bottom {
-    width: 100%;
-    font-size: 2em;
+#MainBody {
+    background-color: white;
     text-align: center;
-    float: center;
-}
-
-#contact-title {
-    font-size: 1.5em;
-    text-align: center;
-    z-index: 1;
-    letter-spacing: 2px;
-    padding-top: 0%;
-}
-
-.contact-stuff {
-    font-size: 1em;
-    z-index: 4;
-    margin-left: 18%;
-}
-
-#contact-info-first {
-    margin-top: 5%;
-}
-
-#contact-name-box, #contact-link-box {
-    background-color: transparent;
     color: #FFC80A;
-    padding: 0.25em 0.25em;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #FFC80A 2px;
-    width: 85%;
-}
-
-#name-elements, #link-elements {
-    width: 50%;
-    float: left;
-}
-
-#description-elements {
-    margin-top: 10%;
-}
-
-#contact-description-box {
-    background-color: transparent;
-    color: #FFC80A;
-    padding: 0.25em 0.25em;
+    font-size: 2.5em;
+    padding-top: 200;
+    padding-bottom: 800;
     outline: none;
     outline-style: none;
     border: solid #FFC80A 2px;
-    width: 92.5%;
-    resize: none;
+    max-width: 100%;
 }
 
-#contact-name, #contact-link, #contact-description {
-    fontsize: 1em;
-    visibility: hidden;
+#transPhoto {
+  padding: 100;
+  background-image: url("https://images.unsplash.com/photo-1476733636740-24c58e0e7432?auto=format&fit=crop&w=1050&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D");
+  background-size: cover;
+  background-image: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: absolute;
+  color: black;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
+  z-index: 2;
 }
 
-#bottom-button {
-    width: 92.5%;
-    content-align: center;
-    padding: 0px 45%;
+#ContactInfo{
+  padding-bottom: 200;
+  background-color: #FFC80A;
+  text-align: center;
 }
 
-#contact-button {
-    margin-top: 5%;
-    margin-bottom: 5%;
+.personnelInfo{
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  color: #2c3e50;
+  position: relative;
+
 }
 
-#picture_display{
-
+/*
+Start of Border Hover Effect
+*/
+*{
+  margin:0;
+  padding:0;
 }
+
+body{
+  background-color:rgba(0,0,0,1);
+  background-image: url("alex-wong-17993-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding: 50px;
+  text-align: left;
+  border-bottom: solid #FFC80A 10px;
+}
+
+p.title{
+  font: 40px 'Roboto', sans-serif;
+  color: rgba(255,255,255,1);
+  margin-bottom: 50px;
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-image: url("alex.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #2c3e50;
+  box-shadow: inset 0 0 0 20px black;
+  -webkit-transition: background 0.4s 0.5s;
+  transition: background 0.2s 0.3s;
+  transition-delay: 0.2s;
+}
+
+.box:hover{background: rgba(255,255,255,0);
+  transition-delay: 0s;}
+
+.box svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box svg line {
+  stroke-width: 10;
+  stroke: #ecf0f1;
+  fill: none;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.box:hover svg line {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.box svg line.top{
+  stroke-dasharray: 330 240;
+}
+
+.box svg line.bottom {
+  stroke-dasharray: 330 240;
+}
+
+.box svg line.left,
+.box svg line.right {
+  stroke-dasharray: 490 400;
+}
+
+.box:hover svg line.top {
+  -webkit-transform: translateX(-600px);
+  transform: translateX(-600px);
+}
+
+.box:hover svg line.bottom {
+  -webkit-transform: translateX(600px);
+  transform: translateX(600px);
+}
+
+.box:hover svg line.left {
+  -webkit-transform: translateY(920px);
+  transform: translateY(920px);
+}
+
+
+.box:hover svg line.right {
+  -webkit-transform: translateY(-920px);
+  transform: translateY(-920px);}
