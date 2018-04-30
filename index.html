@@ -2,107 +2,39 @@
 <html>
 <head>
 
-<script>
-function debug(x){
-  alert(x);
-}
-</script>
-
-  <script type="text/javascript">
-  function displayDate() {
-    var a = document.getElementById("contact-name-box").value;
-    var b = document.getElementById("contact-link-box").value;
-    var c = document.getElementById("contact-description-box").value;
-    var z = a+"<br>"+b+"<br>"+c;
-          debug("working");
-      document.getElementById("demo").innerHTML = (z);
-        WriteFile(z);
-  }
-</script>
-<script>
-  function Update() {
-      if (Input.GetKeyDown("r")) {
-          WriteFile(filePath);
-      }
-      if (Input.GetKeyDown("f")) {
-          ReadFile(filePath);
-      }
-  }
-</script>
-<script>
-
-  import System.IO;
-  var filePath = "/Users/zakled/Desktop/JokesOnHtml/links.txt";
-
-  function WriteFile(filepathIncludingFileName : String)
-  {
-    alert('its a peice of shit');
-      var sw : StreamWriter = new StreamWriter(filePath);
-      sw.WriteLine("Line to write");
-      sw.WriteLine(z);
-      sw.Flush();
-      sw.Close();
-  }
-  </script>
-<script>
-  function ReadFile(filepathIncludingFileName : String) {
-      sr = new File.OpenText(filepathIncludingFileName);
-
-      input = "";
-      while (true) {
-          input = sr.ReadLine();
-          if (input == null) { break; }
-          Debug.Log("line="+input);
-      }
-      sr.Close();
-  }
-
-  </script>
-
   <link rel="StyleSheet" href="style.css">
   <meta charset="utf-8" />
-  <title style="text-align:center;"> MemeHub </title style="text-align:center;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title style="text-align:center;"> Alex Profile </title style="text-align:center;">
   <meta name="Developers" content="amous123">
 
 </head>
+ <div class="wrapper">
+      <p class="title">Alexander Moussa</p>
+      <div class="box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+        <line class="top" x1="0" y1="0" x2="900" y2="0"></line>
+        <line class="left" x1="0" y1="460" x2="0" y2="-920"></line>
+        <line class="bottom" x1="300" y1="300" x2="-600" y2="300"></line>
+        <line class="right" x1="300" y1="0" x2="300" y2="1380"></line>
+</svg>
+<div>
+</div>
+</div>
+  <div class="personelInfo">
+  </div>
+</div>
 
 <body>
-  <div id="main">
     <div id="top">
-      <h1 id="MainTitle"> MemeHub </h1>
-        <p style="text-align:center;"> Website Tester </p style="text-align:center;">
     </div>
-    <div id="picture_insert">
-
-
-      <div id="contact-content">
-        <div id="contact-form">
-            <div id="name-elements">
-                <p id="contact-name">Name</p>
-                <input id="contact-name-box" placeholder="Name"/>
-            </div>
-            <div id="email-elements">
-                <p id="contact-link">URL Link</p>
-                <input id="contact-link-box" placeholder="Link"/>
-            </div>
-            <div id="message-elements">
-                <p id="contact-description">Description</p>
-                <textarea rows="7" id="contact-description-box" placeholder="Description"></textarea>
-            </div>
-            <div id="bottom-button">
-                <button type="button" value="contact-button" onclick="displayDate()" id="contact-button">SEND</button>
-            </div>
-        </div>
+    <div id=transPhoto>
     </div>
-
-
+    <div id="MainBody">
+      <h1 id="AboutMe"> About Me </h1>
     <p id="demo"> </p>
+    </div>
 
-    </div>
-    <div id="picture_display">
-    </div>
-      <a href="product.html"><button>Try us!</button></a>
-  </div>
 <h2 id="ContactInfo">  Contact Info </h2>
   <p> WeAreAwsome.net </p>
 
